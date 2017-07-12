@@ -1,0 +1,19 @@
+<div style="text-align:center">
+	<input id="jeTitle" type="text" placeholder="Write your journal title here"/>
+	<br/>
+	<textarea id="jeEntry" type="text"  placeholder="Write your journal here" rows="5" columns="11"></textarea>
+	<br/>
+	<button (click)="addEntry()">Add Journal Entry</button>
+</div>
+
+<div *ngFor="let je of journalEntries">
+	<p class="aboutMeP2">{{je.title}}<br/>{{je.entry}}</p>
+</div>
+
+<div>
+	<input [(ngModel)]="num1" type="number" />
+	<input [(ngModel)]="num2" type="number" />
+	<button (click)="addNum()">Add Nums</button>
+</div> 
+
+<p *ngIf="!showSum">Sum {{num1 + num2}}</p>

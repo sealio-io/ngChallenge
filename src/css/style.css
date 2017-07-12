@@ -1,0 +1,24 @@
+body{
+  background-color: #000;
+}
+
+#title{
+  color: #fff;
+  text-align: center;
+}
+
+#lightDiv{
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#lightSwitch{
+  width: 50px;
+  vertical-align: middle;
+}
+
+#wandImage{
+width: 100px;
+float:left;
+}
